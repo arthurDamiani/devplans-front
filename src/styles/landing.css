@@ -1,0 +1,19 @@
+.home img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.home .slogan {
+    margin-top: 25%;
+    color: #072331;
+}
+
+@media screen and (max-width: 960px) {
+    .home img {
+        margin-top: -80px;
+        max-width: 100%;
+        height: auto;
+    }
+}
