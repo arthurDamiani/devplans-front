@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import '../styles/landing.css'
 import Header from '../components/Header/index.js'
-import { Typography } from '@material-ui/core'
 import Footer from '../components/Footer/index'
 
 function Landing() {
