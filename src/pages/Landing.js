@@ -34,7 +34,7 @@ function Landing() {
 
     return (
       <>
-        <div className='home'>
+        <div id='home'>
           <Header 
               blue={blueHeader} 
               logo={logo}
@@ -44,6 +44,19 @@ function Landing() {
               <h2 className='slogan'>Desenvolvimento de software de um jeito que você nunca viu</h2>
               <a className='botao-saiba-mais'>Saiba mais</a>
             </div>
+        </div>
+        <div id='contato'>
+          <h2 className="titulo-contato">Contate-nos</h2>
+          <p className="texto-contato">Converse diretamente com nossos especialistas</p>
+          <form className='form'>
+            <input className="input input-name" type="text" name="nome" placeholder="Nome" />
+            <div className="input-mesma-linha">
+              <input className="input input-meio" type="email" name="email" placeholder="Email" />
+              <input className="input input-meio" type="tel" name="telefone" placeholder="Telefone" />
+            </div>
+            <textarea placeholder="Mensagem" className="input textarea"></textarea>
+            <button className="botao-enviar-contato">Enviar mensagem</button>
+          </form>
         </div>
         <Footer />
       </>

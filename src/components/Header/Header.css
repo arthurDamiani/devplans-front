@@ -12,6 +12,7 @@ header {
     padding: 0 50px;
     background: transparent;
     transition: all ease 0.5s;
+    font-family: 'Roboto', sans-serif;
 }
 
 .blue {
