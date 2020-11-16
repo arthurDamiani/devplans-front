@@ -12,15 +12,13 @@ function Footer() {
                 <div className="logo-rodape">
                     <a href="#cabecalho"><img className="logo-rodape" src={logoW} alt="DevPlans"/></a>
                 </div>
-                <div className="endereco">
-                    <p className="endereco-email">contato@devplans.com.br</p>
-                    <div className="endereco-fisico">
-                        <div className="endereco-fisico-comeco">
-                            <p>Rodovia Aparício Ramos Cordeiro,</p>
-                            <p>180</p>
-                        </div>
-                        <p>Casa 18 - CEP 88065-500</p>
+                <p className="endereco-email">contato@devplans.com.br</p>
+                <div className="endereco-fisico">
+                    <div className="endereco-fisico-comeco">
+                        <p>Rodovia Aparício Ramos Cordeiro,</p>
+                        <p>180</p>
                     </div>
+                    <p>Casa 18 - CEP 88065-500</p>
                 </div>
             </div>
             <div className="lado-esquerdo-rodape">

@@ -1,9 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import '../styles/landing.css'
 import Header from '../components/Header/index.js'
-import ImgHome from '../assets/home1920.png'
 import { Typography } from '@material-ui/core'
-import Footer from '../components/Footer'
+import Footer from '../components/Footer/index'
 
 function Landing() {
     const [blueHeader, setBlueHeader] = useState(false)
@@ -36,17 +35,16 @@ function Landing() {
 
     return (
       <>
-        <Header 
-            blue={blueHeader} 
-            logo={logo}
-            linkMenu={linkMenu}
-          />
-
         <div className='home'>
-            <img src={ImgHome} alt='home'/>
-            <Typography className='slogan'>
-              Desenvolvimento de software de um jeito que você nunca viu
-            </Typography>
+          <Header 
+              blue={blueHeader} 
+              logo={logo}
+              linkMenu={linkMenu}
+            />
+            <div className='home-content'>
+              <h2 className='slogan'>Desenvolvimento de software de um jeito que você nunca viu</h2>
+              <a className='botao-saiba-mais'>Saiba mais</a>
+            </div>
         </div>
         <Footer />
       </>

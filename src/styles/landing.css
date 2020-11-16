@@ -1,13 +1,42 @@
-.home img {
+.home {
     max-width: 100%;
-    height: auto;
+    height: 100vh;
+    background-image: url('../assets/home1920.png');
+    background-size: cover;
 }
 
-
-
-.home .slogan {
-    margin-top: 25%;
+.home {
     color: #072331;
+}
+
+.home-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3.75rem;
+}
+
+.slogan {
+    font-size: 3.75rem;
+    color: #033249;
+    max-width: 70vw;
+}
+
+.botao-saiba-mais {
+    width: 7.25rem;
+    height: 3rem;
+    margin-top: 1.8rem;
+    background-color: #033249;
+    box-shadow: 0px 4px 6px #00000029;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width: 960px) {
