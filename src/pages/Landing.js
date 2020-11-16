@@ -2,8 +2,8 @@ import React, {useEffect, useState} from 'react'
 import '../styles/landing.css'
 import Header from '../components/Header/index.js'
 import ImgHome from '../assets/home1920.png'
-import ImgAbout from '../assets/sobre1920.png'
 import { Typography } from '@material-ui/core'
+import Footer from '../components/Footer'
 
 function Landing() {
     const [blueHeader, setBlueHeader] = useState(false)

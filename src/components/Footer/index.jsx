@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import logoW from '../../assets/logo-branco.png'
 
 import './style.css';
 
@@ -8,7 +9,9 @@ function Footer() {
     return(
         <footer id="rodape">
             <div className="lado-direitro-rodape">
-                <a className="logo-rodape" href="#cabecalho">DevPlans</a>
+                <div className="logo-rodape">
+                    <a href="#cabecalho"><img className="logo-rodape" src={logoW} alt="DevPlans"/></a>
+                </div>
                 <div className="endereco">
                     <p className="endereco-email">contato@devplans.com.br</p>
                     <div className="endereco-fisico">
