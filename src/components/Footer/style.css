@@ -103,3 +103,9 @@
 		align-items: center;
 	}
 }
+
+@media (max-width: 333px) {
+	.endereco-fisico-comeco {
+		font-size: smaller;
+	}
+}
