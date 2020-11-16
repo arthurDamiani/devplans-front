@@ -44,7 +44,7 @@
 	background-image: url('../assets/contato.png');
 	background-size: cover;
 	height: 100vh;
-	width: auto;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -68,7 +68,7 @@
 
 .form {
 	height: 58vh;
-	width: 100vw;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
     align-items: center;
@@ -135,4 +135,14 @@
         max-width: 100%;
         height: auto;
     }
+}
+
+@media screen and (max-width: 750px) {
+	.input-mesma-linha {
+		flex-direction: column;
+	}
+
+	.input-meio {
+		width: 100%;
+	}
 }
