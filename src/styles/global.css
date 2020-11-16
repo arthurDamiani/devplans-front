@@ -6,9 +6,9 @@
 
 body {
     color: #fff;
-    background: #ebf2f5;
+    background: #fff;
 }
 
-body, input, button, textarea {
+body, input, button, textarea, div {
     font: 600 18px Nunito, sans-serif;
 }
