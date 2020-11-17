@@ -8,6 +8,12 @@ function Landing() {
     const [logo, setLogo] = useState(false)
     const [linkMenu, setLinkMenu] = useState(false)
 
+    const [name, setName] = useState('')
+    const [mail, setMail] = useState('')
+    const [phone, setPhone] = useState('')
+    const [message, setMessage] = useState('')
+
+
     useEffect(() => {
         const scrollListener = () => {
           window.scrollY > 10 ? setBlueHeader(true) : setBlueHeader(false)
@@ -49,12 +55,12 @@ function Landing() {
           <h2 className="titulo-contato">Contate-nos</h2>
           <p className="texto-contato">Converse diretamente com nossos especialistas</p>
           <form className='form'>
-            <input className="input input-name" type="text" name="nome" placeholder="Nome" />
+            <input className="input input-name" type="text" name="nome" value={name} onChange={(e) => {setName(e.target.value)}} placeholder="Nome" />
             <div className="input-mesma-linha">
-              <input className="input input-meio" type="email" name="email" placeholder="Email" />
-              <input className="input input-meio" type="tel" name="telefone" placeholder="Telefone" />
+              <input className="input input-meio" type="email" name="email" value={mail} onChange={(e) => {setMail(e.target.value)}} placeholder="Email" />
+              <input className="input input-meio" type="tel" name="telefone" value={phone} onChange={(e) => {setPhone(e.target.value)}} placeholder="Telefone" />
             </div>
-            <textarea placeholder="Mensagem" className="input textarea"></textarea>
+            <textarea placeholder="Mensagem" value={message} onChange={(e) => {setMessage(e.target.value)}} className="input textarea"></textarea>
             <button className="botao-enviar-contato">Enviar mensagem</button>
           </form>
         </div>
