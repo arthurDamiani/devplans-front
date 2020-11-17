@@ -59,13 +59,18 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all ease 0.2s;
+}
+
+.lista-item:hover {
+	background-color: rgba(255, 128, 56, 0.5);
 }
 
 .item-meio {
 	margin: 0 0.8rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 960px) {
 	#rodape {
 		height: auto;
 		flex-direction: column;

@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import '../styles/landing.css'
 import Header from '../components/Header/index.js'
 import Footer from '../components/Footer/index'
+import sobre from '../assets/sobre1920.png'
 
 function Landing() {
     const [blueHeader, setBlueHeader] = useState(false)
@@ -45,7 +46,12 @@ function Landing() {
               <a className='botao-saiba-mais'>Saiba mais</a>
             </div>
         </div>
-        <Footer />
+        <div id='sobre' className='sobre'>
+          <h2 className='quem-somos'>Quem somos</h2>
+          <p className='quem-somos-conteudo'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          <img src={sobre} alt='sobre'/> 
+        </div>
+          <Footer />
       </>
 
       

@@ -23,7 +23,7 @@ const Header = ({ blue, logo, linkMenu }) => {
                 </div>
                 <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
                      <li> 
-                        <a className={linkMenu ? 'nav-links' : 'nav-links-blue'} href='/'> 
+                        <a className={linkMenu ? 'nav-links' : 'nav-links-blue'} href='#sobre'> 
                             Sobre
                         </a> 
                         <a className={linkMenu ? 'nav-links' : 'nav-links-blue'} href='/'> 
