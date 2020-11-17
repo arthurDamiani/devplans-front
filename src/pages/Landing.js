@@ -9,6 +9,12 @@ function Landing() {
     const [logo, setLogo] = useState(false)
     const [linkMenu, setLinkMenu] = useState(false)
 
+    const [name, setName] = useState('')
+    const [mail, setMail] = useState('')
+    const [phone, setPhone] = useState('')
+    const [message, setMessage] = useState('')
+
+
     useEffect(() => {
         const scrollListener = () => {
           window.scrollY > 10 ? setBlueHeader(true) : setBlueHeader(false)
@@ -35,7 +41,7 @@ function Landing() {
 
     return (
       <>
-        <div className='home'>
+        <div id='home'>
           <Header 
               blue={blueHeader} 
               logo={logo}
@@ -51,7 +57,20 @@ function Landing() {
           <p className='quem-somos-conteudo'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
           <img src={sobre} alt='sobre'/> 
         </div>
-          <Footer />
+        <div id='contato'>
+          <h2 className="titulo-contato">Contate-nos</h2>
+          <p className="texto-contato">Converse diretamente com nossos especialistas</p>
+          <form className='form'>
+            <input className="input input-name" type="text" name="nome" value={name} onChange={(e) => {setName(e.target.value)}} placeholder="Nome" />
+            <div className="input-mesma-linha">
+              <input className="input input-meio" type="email" name="email" value={mail} onChange={(e) => {setMail(e.target.value)}} placeholder="Email" />
+              <input className="input input-meio" type="tel" name="telefone" value={phone} onChange={(e) => {setPhone(e.target.value)}} placeholder="Telefone" />
+            </div>
+            <textarea placeholder="Mensagem" value={message} onChange={(e) => {setMessage(e.target.value)}} className="input textarea"></textarea>
+            <button className="botao-enviar-contato">Enviar mensagem</button>
+          </form>
+        </div>
+        <Footer />
       </>
 
       

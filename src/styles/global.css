@@ -8,7 +8,3 @@ body {
     color: #fff;
     background: #fff;
 }
-
-body, input, button, textarea, div {
-    font: 600 18px Nunito, sans-serif;
-}
