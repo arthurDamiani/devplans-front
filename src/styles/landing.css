@@ -190,11 +190,39 @@
     }
 
     .botao-saiba-mais {
-        width: 5.5rem;
-        height: 2.5rem;
-        font-size: 0.85rem;
-  
+        width: 30%;
     }  
+
+    #sobre {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagem-sobre, .lado-esquerdo-sobre {
+        height: auto;
+        width: 100%;
+    }
+
+    .lado-esquerdo-sobre {
+        padding: 2rem 0;
+    }
+
+    .quem-somos {
+        font-size: 3rem;
+    }
+
+    .quem-somos-conteudo {
+        margin-top: 1rem;
+        width: 80vw;
+    }
+
+    .lado-esquerdo-sobre {
+        padding: 4.5rem 0;
+        
+    }
+    
 }
 
 @media screen and (max-width: 800px) {
@@ -221,15 +249,6 @@
     .imagem-sobre, .lado-esquerdo-sobre {
         height: auto;
         width: 100%;
-    }
-
-    .lado-esquerdo-sobre {
-        padding: 2rem 0;
-    }
-
-    .quem-somos-conteudo {
-        margin-top: 1rem;
-        width: 80vw;
     }
 
     #contato {
