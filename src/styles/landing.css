@@ -83,7 +83,7 @@
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.125rem;
 	padding-left: 1.25rem;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 .input:focus {
@@ -139,8 +139,13 @@
 }
 
 @media screen and (max-width: 750px) {
+	.input-name, .textarea, .botao-enviar-contato {
+		width: 80vw;
+	}
+
 	.input-mesma-linha {
 		flex-direction: column;
+		width: 80vw;
 	}
 
 	.input-meio {
@@ -154,6 +159,12 @@
 	}
 
 	.texto-contato {
-		font-size: 1.4rem;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.titulo-contato {
+		font-size: 3rem;
 	}
 }

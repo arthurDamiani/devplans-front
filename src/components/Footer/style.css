@@ -20,13 +20,12 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .logo-rodape {
-	height: 2.8rem;
-	width: 13.8rem;
-	padding-top: 0.5rem;
+	height: 3rem;
+	width: 15rem;
 }
 
 .endereco-email {
