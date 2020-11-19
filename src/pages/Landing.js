@@ -41,17 +41,6 @@ function Landing() {
         window.addEventListener('scroll', scrollListener)
       }, [linkMenu])
 
-      const useStyles = makeStyles({
-        root: {
-          display: 'flex',
-          backgroundColor: '#fff',
-          borderRadius: '4px',
-          borderColor: 'red'
-        },
-      })
-
-      const classes = useStyles()
-
     return (
       <>
         <div id='home'>
@@ -80,13 +69,13 @@ function Landing() {
               Converse diretamente com nossos especialistas
           </Typography>
           <Container component='article' maxWidth='sm'>
-            <form onSubmit={
+            <form className='form' onSubmit={
             (event) => {
                 event.preventDefault()
                 onSendForm({name, mail, phone, message})
             }}>
               <TextField
-                className={classes.root}
+                className='input input-grande'
                 value={name}
                 name='name'
                 onChange={(event) => { setName(event.target.value) }}
@@ -98,43 +87,50 @@ function Landing() {
                 margin='normal'
                 fullWidth 
               />
-              <TextField 
-                className={classes.root}
-                value={mail}
-                name='mail'
-                onChange={(event) => { setMail(event.target.value) }}
-                id='mail' 
-                label='Email' 
-                type='email' 
-                variant='filled' 
-                required 
-                margin='normal'
-              />
-              <TextField 
-                className={classes.root}
-                value={phone}
-                name='phone'
-                onChange={(event) => { setPhone(event.target.value) }}
-                id='phone' 
-                label='Telefone' 
-                type='number' 
-                variant='filled' 
-                required 
-                margin='normal'
-              />
-              <TextField 
-                className={classes.root}
+              <div className='input-meio'>
+                <div className='input-pequeno'>
+                  <TextField
+                    className='input'
+                    value={mail}
+                    name='name'
+                    onChange={(event) => { setMail(event.target.value) }}
+                    id='name' 
+                    label='Email' 
+                    type='mail' 
+                    variant='filled' 
+                    required 
+                    margin='normal' 
+                    fullWidth
+                  />
+                </div>
+                <div className='input-pequeno'>
+                  <TextField
+                    className='input'
+                    value={phone}
+                    name='name'
+                    onChange={(event) => { setPhone(event.target.value) }}
+                    id='name' 
+                    label='Email' 
+                    type='tel' 
+                    variant='filled' 
+                    required 
+                    margin='normal'
+                    fullWidth
+                  />
+                </div>
+              </div>
+              <TextField
+                className='input input-grande'
                 value={message}
-                name='message'
+                name='name'
                 onChange={(event) => { setMessage(event.target.value) }}
-                id='message' 
+                id='name' 
                 label='Mensagem' 
                 type='text' 
                 variant='filled' 
                 required 
                 margin='normal'
-                fullWidth
-                multiline
+                fullWidth 
               />
               <Button variant="contained" color="primary" fullWidth style={{marginBottom: '3rem', marginTop: '1rem', backgroundColor: '#033249'}}>
                 Enviar mensagem
