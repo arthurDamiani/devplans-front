@@ -3,7 +3,7 @@ import '../styles/landing.css'
 import Header from '../components/Header/index'
 import Footer from '../components/Footer/index'
 import sobre from '../assets/sobre1920.png'
-import { Button, Container, makeStyles, TextField, Typography } from '@material-ui/core'
+import { Button, Container, TextField, Typography } from '@material-ui/core'
 
 function Landing() {
     const [blueHeader, setBlueHeader] = useState(false)
