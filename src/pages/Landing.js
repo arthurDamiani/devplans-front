@@ -1,8 +1,9 @@
 import React, {useEffect, useState} from 'react'
 import '../styles/landing.css'
-import Header from '../components/Header/index.js'
+import Header from '../components/Header/index'
 import Footer from '../components/Footer/index'
 import sobre from '../assets/sobre1920.png'
+import { Button, Container, makeStyles, TextField, Typography } from '@material-ui/core'
 
 function Landing() {
     const [blueHeader, setBlueHeader] = useState(false)
@@ -14,9 +15,7 @@ function Landing() {
     const [phone, setPhone] = useState('')
     const [message, setMessage] = useState('')
 
-  const onSendForm = (dados) => console.log(dados)
-
-
+    const onSendForm = (dados) => console.log(dados)
 
     useEffect(() => {
         const scrollListener = () => {
@@ -42,6 +41,17 @@ function Landing() {
         window.addEventListener('scroll', scrollListener)
       }, [linkMenu])
 
+      const useStyles = makeStyles({
+        root: {
+          display: 'flex',
+          backgroundColor: '#fff',
+          borderRadius: '4px',
+          borderColor: 'red'
+        },
+      })
+
+      const classes = useStyles()
+
     return (
       <>
         <div id='home'>
@@ -63,54 +73,76 @@ function Landing() {
           <img className='imagem-sobre' src={sobre} alt='sobre'/> 
         </div>
         <div id='contato'>
-          <h2 className="titulo-contato">Contate-nos</h2>
-          <p className="texto-contato">Converse diretamente com nossos especialistas</p>
-          <form 
-            className='form'
-            onSubmit={
-              (event) => {
-                  event.preventDefault()
-                  onSendForm({name, mail, phone, message})
-              }
-          }>
-            <input 
-              className="input input-name" 
-              type="text" 
-              name="nome" 
-              value={name} 
-              onChange={(e) => {setName(e.target.value)}} 
-              placeholder="Nome"
-              required
-             />
-              
-            <div className="input-mesma-linha">
-              <input 
-                className="input input-meio" 
-                type="email" 
-                name="email" 
-                value={mail} 
-                onChange={(e) => {setMail(e.target.value)}} 
-                placeholder="Email" 
-                required
+          <Typography variant="h2" style={{marginTop: '6rem', marginBottom: '3rem', fontWeight: 'bold'}}>
+              Contate-nos
+          </Typography>
+          <Typography variant="h5" style={{ margin: '0.5rem 1.5rem'}}>
+              Converse diretamente com nossos especialistas
+          </Typography>
+          <Container component='article' maxWidth='sm'>
+            <form onSubmit={
+            (event) => {
+                event.preventDefault()
+                onSendForm({name, mail, phone, message})
+            }}>
+              <TextField
+                className={classes.root}
+                value={name}
+                name='name'
+                onChange={(event) => { setName(event.target.value) }}
+                id='name' 
+                label='Nome' 
+                type='text' 
+                variant='filled' 
+                required 
+                margin='normal'
+                fullWidth 
               />
-              <input 
-                className="input input-meio" 
-                type="tel" 
-                name="telefone" 
-                value={phone} 
-                onChange={(e) => {setPhone(e.target.value)}} 
-                placeholder="Telefone" 
-                required
+              <TextField 
+                className={classes.root}
+                value={mail}
+                name='mail'
+                onChange={(event) => { setMail(event.target.value) }}
+                id='mail' 
+                label='Email' 
+                type='email' 
+                variant='filled' 
+                required 
+                margin='normal'
               />
-            </div>
-            <textarea 
-              placeholder="Mensagem" 
-              value={message} 
-              onChange={(e) => {setMessage(e.target.value)}} 
-              className="input textarea"
-            />             
-            <button className="botao-enviar-contato">Enviar mensagem</button>
-          </form>
+              <TextField 
+                className={classes.root}
+                value={phone}
+                name='phone'
+                onChange={(event) => { setPhone(event.target.value) }}
+                id='phone' 
+                label='Telefone' 
+                type='number' 
+                variant='filled' 
+                required 
+                margin='normal'
+              />
+              <TextField 
+                className={classes.root}
+                value={message}
+                name='message'
+                onChange={(event) => { setMessage(event.target.value) }}
+                id='message' 
+                label='Mensagem' 
+                type='text' 
+                variant='filled' 
+                required 
+                margin='normal'
+                fullWidth
+                multiline
+              />
+              <Button variant="contained" color="primary" fullWidth style={{marginBottom: '3rem', marginTop: '1rem', backgroundColor: '#033249'}}>
+                Enviar mensagem
+              </Button>
+            </form>
+            
+        </Container> 
+
         </div>
         <Footer />
       </>

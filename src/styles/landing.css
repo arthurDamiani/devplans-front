@@ -90,88 +90,11 @@
 #contato {
 	background-image: url('../assets/contato1920.png');
 	background-size: cover;
-	height: 100vh;
+	height: auto;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
-	color: #fff;
-}
-
-.titulo-contato {
-	font-family: 'Manrope', sans-serif;
-	margin-top: 8rem;
-	font-weight: bold;
-	font-size: 5rem;
-}
-
-.texto-contato {
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.6rem;
-	margin-top: 0.8rem;
-	margin-bottom: 2rem;
-}
-
-.form {
-	height: 58vh;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-    align-items: center;
-	justify-content: center;
-}
-
-.input {
-    height: 2.75rem;
-	width: calc(55vw - 1.25rem);
-	border-radius: 6px;
-	border: none;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(66, 66, 66);
-	font-size: 1.125rem;
-	padding-left: 1.25rem;
-	margin-bottom: 1rem;
-}
-
-.input:focus {
-	border: 2px solid #053d58;
-	outline: 0;
-}
-
-.input-mesma-linha {
-	width: calc(55vw - 1.25rem);
-	display: flex;
-	justify-content: space-between;
-}
-
-.input-meio {
-	width: calc(27vw - 1.25rem);
-}
-
-.textarea {
-	height: 6.875rem;
-	width: calc(55vw - 1.25rem);
-	resize: none;
-	padding-top: 0.75rem;
-}
-
-.botao-enviar-contato {
-	width: calc(55vw - 1.25rem);
-	height: 2.75rem;
-	margin-bottom: 4rem;
-	background-color: #033249;
-	color: #fff;
-	border-radius: 6px;
-    border: none;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    transition: all ease 0.3s;
-}
-
-.botao-enviar-contato:hover {
-	background-color: #053d58;
-	cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
@@ -247,47 +170,10 @@
         height: auto;
         width: 100%;
     }
-
-    #contato {
-        height: auto;
-    }
-
-	.input-name, .textarea, .botao-enviar-contato {
-		width: 80vw;
-	}
-
-	.input-mesma-linha {
-		flex-direction: column;
-		width: 80vw;
-	}
-
-	.input-meio {
-		width: 100%;
-    }
-
-    .botao-enviar-contato {
-        width: 40%;
-        margin-bottom: 1rem;
-        height: 6rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-	.titulo-contato {
-		font-size: 3.5rem;
-	}
-
-	.texto-contato {
-		text-align: center;
-	}
 }
 
 @media screen and (max-width: 400px) {
     .slogan {
         font-size: 1.7rem;
     }
-
-	.titulo-contato {
-		font-size: 3rem;
-	}
 }
