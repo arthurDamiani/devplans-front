@@ -4,6 +4,8 @@ import Header from '../components/Header/index'
 import Footer from '../components/Footer/index'
 import sobre from '../assets/sobre1920.png'
 import { Button, Container, TextField, Typography } from '@material-ui/core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptop, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 
 function Landing() {
     const [blueHeader, setBlueHeader] = useState(false)
@@ -60,6 +62,21 @@ function Landing() {
             <p className='quem-somos-conteudo'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
           </div>
           <img className='imagem-sobre' src={sobre} alt='sobre'/> 
+        </div>
+        <div id="solucoes">
+          <h2 className="titulo-solucoes">Nossas soluções</h2>
+          <div className="box-container">
+            <div className="box primeira-box">
+              <FontAwesomeIcon icon={faLaptop} id="icon" />
+              <h4 className='titulo-box'>Desenvolvimento de software</h4>
+              <p className='texto-box'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div className="box segunda-box">
+              <FontAwesomeIcon icon={faMobileAlt} id="icon" />
+              <h4 className='titulo-box'>Desenvolvimento de aplicativos</h4>
+              <p className='texto-box'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
         </div>
         <div id='contato'>
           <Typography variant="h2" style={{marginTop: '6rem', marginBottom: '3rem', fontWeight: 'bold'}}>
