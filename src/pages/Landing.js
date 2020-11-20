@@ -86,11 +86,13 @@ function Landing() {
               Converse diretamente com nossos especialistas
           </Typography>
           <Container component='article' maxWidth='sm'>
-            <form className='form' onSubmit={
-            (event) => {
-                event.preventDefault()
-                onSendForm({name, mail, phone, message})
-            }}>
+            <form 
+              className='form' 
+              onSubmit={
+              (event) => {
+                  event.preventDefault()
+                  onSendForm({name, mail, phone, message})
+              }}>
               <TextField
                 className='input input-grande'
                 value={name}
@@ -127,7 +129,7 @@ function Landing() {
                     name='name'
                     onChange={(event) => { setPhone(event.target.value) }}
                     id='name' 
-                    label='Email' 
+                    label='Telefone' 
                     type='tel' 
                     variant='filled' 
                     required 
@@ -153,9 +155,7 @@ function Landing() {
                 Enviar mensagem
               </Button>
             </form>
-            
           </Container> 
-
         </div>
         <Footer />
       </>

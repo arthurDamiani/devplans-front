@@ -26,7 +26,7 @@ const Header = ({ blue, logo, linkMenu }) => {
                         <a className={linkMenu ? 'nav-links' : 'nav-links-blue'} href='#sobre'> 
                             Sobre
                         </a> 
-                        <a className={linkMenu ? 'nav-links' : 'nav-links-blue'} href='/'> 
+                        <a className={linkMenu ? 'nav-links' : 'nav-links-blue'} href='#solucoes'> 
                             Soluções
                         </a>
                         <a className={linkMenu ? 'nav-links' : 'nav-links-blue'} href='#contato'> 

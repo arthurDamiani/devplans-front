@@ -88,7 +88,7 @@ header {
    }
 
    .nav--logo img {
-        margin-bottom: -1rem;
+        margin-bottom: -1.2rem;
         height: 100%;
     }
 
@@ -144,9 +144,14 @@ header {
         color:  rgba(255, 128, 56, 0.5);
         font-size: 2rem;
     }
-
 }
 
+@media screen and (max-width: 415px) {
+    .nav--logo {
+        height: 2.6rem;
+        width: 10.5rem;
+    }
+}
 
 
 
