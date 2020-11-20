@@ -139,11 +139,13 @@
 
 .titulo-box {
     width: 20vw;
+    font-size: 1.125rem;
 }
 
 .texto-box {
     width: 30vw;
     text-align: center;
+    font-size: 0.875rem;
 }
 
 .primeira-box {
@@ -268,6 +270,17 @@
         width: 100%;
     }
 
+    #solucoes {
+        align-items: center;
+        text-align: center;
+        background-size: cover;
+        padding: 9rem 2rem;
+    }
+
+    .titulo-solucoes {
+        margin-bottom: 8rem;
+    }
+
     .input-meio {
         flex-direction: column;
     }
@@ -277,8 +290,52 @@
     }
 }
 
+@media screen and (max-width: 700px) {
+    #solucoes {
+        height: auto;
+    }
+
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        height: auto;
+        width: 60vw;
+    }
+
+    .titulo-box {
+        width: 40vw;
+        margin-top: 1.5rem;
+    }
+
+    .texto-box {
+        width: 50vw;
+        margin-top: 2rem;
+    }
+
+    .primeira-box {
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+}
+
 @media screen and (max-width: 400px) {
     .slogan {
         font-size: 1.7rem;
+    }
+
+    .box {
+        width: 80vw;
+    }
+
+    .titulo-box {
+        width: 60vw;
+    }
+
+    .texto-box {
+        width: 70vw;
     }
 }

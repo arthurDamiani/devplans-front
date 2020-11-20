@@ -53,7 +53,7 @@ function Landing() {
             />
             <div className='home-content'>
               <h2 className='slogan'>Desenvolvimento de software de um jeito que você nunca viu</h2>
-              <a className='botao-saiba-mais'>Saiba mais</a>
+              <a href='#header' className='botao-saiba-mais'>Saiba mais</a>
             </div>
         </div>
         <div id='sobre'>
@@ -154,7 +154,7 @@ function Landing() {
               </Button>
             </form>
             
-        </Container> 
+          </Container> 
 
         </div>
         <Footer />

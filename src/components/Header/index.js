@@ -11,7 +11,7 @@ const Header = ({ blue, logo, linkMenu }) => {
     }
 
     return (
-        <nav className='nav'>
+        <nav id='header' className='nav'>
             <header className={blue ? 'blue' : ''}>
                 <div className="nav--logo">
                     <a href='/'>
