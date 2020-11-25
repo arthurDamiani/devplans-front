@@ -79,10 +79,10 @@ function Landing() {
           </div>
         </div>
         <div id='contato'>
-          <Typography variant="h2" style={{marginTop: '6rem', marginBottom: '3rem', fontWeight: 'bold'}}>
+          <Typography variant="h2" style={{marginTop: '3rem', marginBottom: '3rem', fontWeight: 'bold'}}>
               Contate-nos
           </Typography>
-          <Typography variant="h5" style={{ margin: '0.5rem 1.5rem'}}>
+          <Typography variant="h5" style={{ margin: '0.5rem 1.5rem', textAlign: 'center'}}>
               Converse diretamente com nossos especialistas
           </Typography>
           <Container component='article' maxWidth='sm'>
