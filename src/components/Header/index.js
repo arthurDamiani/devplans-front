@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './Header.css'
 import logoB from '../../assets/logo-azul.png'
 import logoW from '../../assets/logo-branco.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+
 
 const Header = ({ blue, logo, linkMenu }) => {
     const [clicked, setClicked] = useState(false)
@@ -31,6 +34,12 @@ const Header = ({ blue, logo, linkMenu }) => {
                         </a>
                         <a className={linkMenu ? 'nav-links' : 'nav-links-blue'} href='#contato'> 
                             Contato
+                        </a>
+                        <a 
+                            className={linkMenu ? 'nav-links' : 'nav-links-blue'} href="https://api.whatsapp.com/send?phone=5548984850006"
+                            target="_blank"> 
+
+                            <FontAwesomeIcon icon={faWhatsapp} size='lg'/> 
                         </a>
                     </li>  
                 </ul>

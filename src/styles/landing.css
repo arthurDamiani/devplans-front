@@ -22,6 +22,7 @@
 .slogan {
     font-size: 3rem;
     color: #033249;
+    max-width: 70vw;
     text-shadow: 0px 3px 10px #00000029;
     font-family: 'Manrope', sans-serif;
 }
@@ -156,12 +157,11 @@
 #contato {
 	background-image: url('../assets/contato1920.png');
 	background-size: cover;
-	height: 100vh;
+	height: auto;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
 }
 
 .form {
@@ -281,10 +281,6 @@
 
     .titulo-solucoes {
         margin-bottom: 8rem;
-    }
-
-    #contato {
-        height: auto;
     }
 
     .input-meio {
