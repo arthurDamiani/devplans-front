@@ -157,11 +157,12 @@
 #contato {
 	background-image: url('../assets/contato1920.png');
 	background-size: cover;
-	height: auto;
+	height: 100vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+    align-items: center;
+    text-align: center;
 }
 
 .form {
@@ -281,6 +282,10 @@
 
     .titulo-solucoes {
         margin-bottom: 8rem;
+    }
+
+    #contato {
+        height: auto;
     }
 
     .input-meio {
