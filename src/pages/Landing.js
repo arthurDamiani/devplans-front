@@ -85,7 +85,7 @@ function Landing() {
           <Typography variant="h5" style={{ margin: '0.5rem 1.5rem'}}>
               Converse diretamente com nossos especialistas
           </Typography>
-          <Container component='article' maxWidth='sm'>
+          <Container component='article' maxWidth='md'>
             <form 
               className='form' 
               onSubmit={
@@ -149,7 +149,9 @@ function Landing() {
                 variant='filled' 
                 required 
                 margin='normal'
-                fullWidth 
+                fullWidth
+                multiline
+                rows={4} 
               />
               <Button variant="contained" color="primary" fullWidth style={{marginBottom: '3rem', marginTop: '1rem', backgroundColor: '#033249'}}>
                 Enviar mensagem
